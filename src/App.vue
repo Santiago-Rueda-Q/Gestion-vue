@@ -26,6 +26,7 @@ import Menubar from 'primevue/menubar'
 import Card from 'primevue/card'
 import Menu from 'primevue/menu'
 import Avatar from 'primevue/avatar'
+import router from './router'
 
 export default {
   name: 'App',
@@ -52,21 +53,21 @@ export default {
             label: 'Usuarios',
             icon: 'pi pi-users',
             command: () => {
-              // Navegar a usuarios
+              router.push('/usuarios')
             }
           },
           {
             label: 'Instituciones',
             icon: 'pi pi-building',
             command: () => {
-              // Navegar a instituciones
+              router.push('/instituciones')
             }
           },
           {
             label: 'Programas Académicos',
             icon: 'pi pi-book',
             command: () => {
-              // Navegar a programas
+              router.push('/programas')
             }
           }
         ]
